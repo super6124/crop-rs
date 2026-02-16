@@ -1,9 +1,14 @@
 [package]
+<<<<<<< HEAD
 name = "fast_trim"
+=======
+name = "crop-rs"
+>>>>>>> b7cf83d5bcc29f3be88981ac702e9d87d83157d4
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+<<<<<<< HEAD
 # libvips wrapper (ensure libvips C-library is installed on your system)
 libvips = "1.0.5.12
 toml = "0.9.8"
@@ -16,3 +21,18 @@ lto = true
 codegen-units = 1
 panic = 'abort'
 strip = true # Removes debug symbols for smaller/faster loading binary
+=======
+image = "0.25.9"
+rayon = "1.11.0"
+oxipng = "10.1.0"
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "0.8.23"
+anyhow = "1.0.101"
+mimalloc ="0.1.48"
+
+[profile.release]
+lto = true
+codegen_units = 1
+panic = 'abort'
+strip = true
+>>>>>>> b7cf83d5bcc29f3be88981ac702e9d87d83157d4
